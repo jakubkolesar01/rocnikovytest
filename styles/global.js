@@ -1,4 +1,4 @@
-import {StyleSheet} from 'react-native';
+import {Dimensions, StyleSheet} from 'react-native';
 
 export const globalStyles = StyleSheet.create({
     container : {
@@ -44,7 +44,7 @@ export const globalStyles = StyleSheet.create({
         height : 150,
       },
       gradient : {
-          flex :1
+          flex :1,
       },
       zostatok : {
         flex : 0.7,
@@ -87,8 +87,38 @@ export const globalStyles = StyleSheet.create({
         backgroundColor:'#009387',
         borderRadius:30,
       },
-      transactions: {
+      transactions :{
+        flex : 1,
+        flexDirection : "column",
+        alignItems : "center",
+        
+      },
+      transactionsitems: {
+        width : Dimensions.get('screen').width/1.25,
         padding : 20,
-      }
+        borderBottomWidth : 1,
+        borderBottomColor : "#333"
+      },
+     transwrap : {
+      flexDirection: 'row',
+      height: 30,
+      
+     },
+     category : {
+      flex: 1,
+      justifyContent: 'center',
+      alignItems:'flex-start',
+    
+     },
+     price : {
+      flex: 1,
+      justifyContent: 'center',
+      alignItems: 'flex-end',
+      
+     },
+     wastemodal : {
+      
+     },
+
      
 })

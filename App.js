@@ -7,12 +7,16 @@ import Welcome from './screens/welcome';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
 import * as Animatable from 'react-native-animatable';
+import { createStackNavigator } from 'react-navigation-stack';
 
 const Tab = createBottomTabNavigator();
-export default function App() { 
+
+const App =()=> { 
   return (
     
       <AppNavigator/>
     
   );
-}
+};
+
+export default App;
